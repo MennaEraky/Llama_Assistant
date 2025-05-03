@@ -42,10 +42,12 @@ cd Llama_Assistant
 
 git clone https://github.com/MennaEraky/Llm-Assistant.git
 cd Llm-Assistant
+
 2. Set up Python Environment
 python3 -m venv venv
 source venv/bin/activate  # or .\venv\Scripts\activate on Windows
 pip install -r requirements.txt
+
 3. Configure Environment Variables
 Create a .env file in the root directory and add:
 
@@ -57,11 +59,12 @@ Install Ollama and pull LLaMA 3 model:
 brew install ollama
 ollama serve
 ollama pull llama3
-🚀 Run the App
+
+##🚀 Run the App
 streamlit run p.py
 Open http://localhost:8501 in your browser.
 
-💡 How It Works
+##💡 How It Works
 You provide a company URL and name.
 
 The app scrapes the landing page and relevant internal links.
@@ -72,7 +75,7 @@ You can also chat with a local model (LLaMA3 via Ollama).
 
 The assistant dynamically uses tools when needed (like get_brochure or todays_date).
 
-📂 File Structure
+##📂 File Structure
 .
 ├── streamlit_app.py      # Main Streamlit App
 ├── requirements.txt      # Python dependencies
@@ -93,12 +96,12 @@ python-json-logger
 
 ollama (LLaMA runtime)
 
-🧠 Model Details
+##🧠 Model Details
 Gemini (via OpenAI SDK): for structured, cloud-based summarization.
 
 LLaMA3 via Ollama: runs locally for chat and tool-based assistance.
 
-🛡️ Notes
+##🛡️ Notes
 Ensure your IP is not blocked by sites you are scraping.
 
 Gemini API requires access to https://generativelanguage.googleapis.com.
